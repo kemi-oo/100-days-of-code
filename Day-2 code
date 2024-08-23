@@ -1,7 +1,10 @@
+#calculates how much each person should pay including the tip if
+#a bill is to be split between a number of people
 print("welcome to the tip calculator!")
 bill = float(input("what was the total bill?:\n$"))
 tip = int(input("How much tip would you like to give? 10, 12, or 15?:\n"))
 number_of_people = int(input("How many people to split the bill?:\n"))
+#The line of code below calculates the tip with the main bill
 amount_for_each_person = ((bill / number_of_people) + (((tip/100) * bill) / number_of_people))
 rounded_amount = round(amount_for_each_person, 2)
 print(f"Each person should pay:$ {rounded_amount}")
