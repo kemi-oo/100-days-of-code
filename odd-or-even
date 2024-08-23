@@ -1,0 +1,10 @@
+#Number checker (odd or Even)
+print("Odd or Even?")
+number = int(input("Enter a number: "))
+modulo = number % 2
+print("modulo is:", modulo)
+
+if modulo == 0:
+    print("The number you entered is an Even number")
+else:
+    print("The number you entered is an odd number")
