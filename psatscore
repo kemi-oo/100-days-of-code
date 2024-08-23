@@ -1,0 +1,14 @@
+#this code checks your PSAT score and decides how eligible you are for our courses
+name = input("what's your name?:\n")
+print("Hello", name,"! Welcome to your portal")
+print("Enter your PSAT score to continue")
+PSAT_score = int(input("PSAT score: "))
+
+if PSAT_score <= 320:
+   print("Sorry, you're not eligible for any of ou courses.")
+elif PSAT_score <= 800:
+   print("you're eligible for limited courses.")
+elif PSAT_score == 900:
+   print("Congratulations! you're eligible for any course of your choice.")
+else:
+    print("OMG!! you just won a scholarship.\nClick below for more info")
